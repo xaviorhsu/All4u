@@ -1,0 +1,23 @@
+/* ---------------------------------devtab.css--------------------------------------------- */
+body    {background-color:darkblue;}
+.mpage  {width:100%;font-size:73%;}
+.apDiv1A{float:left;width:25%;height:100%;display:flex;align-items:center;justify-content:center}
+.nav1i  {float:right;width:80%;}
+.D1Asp1	{font-size:68%;}
+.apDiv1B{float:right;width:74%;height:100%;}
+.Dd0	{font-size:65%;}
+.apDiv1B div {float:right;}
+.spv 	{margin:2px 0.8%;}
+.spv2	{margin:3px 0.8%;}
+.apDiv2 {float:left;width:25%;}
+#tbmenu1 a    {font-size:60%;}
+.apDiv3 {float:right;width:75%;}
+#im1 a 	{font-size:65%;}
+#im1 div.iv3     {width:46%;}
+#v43 div.iv43    {width:48%;}
+#v44 div.iv3     {width:31%;}
+span.sp4 		 {font-size:70%;}
+#v46 div.iv33    {width:47%;}
+span.sp3 	     {font-size:70%;}
+#apDiv4 div {margin:3% auto;font-size:70%;}
+/* ---------------------------------devtab.css--------------------------------------------- */

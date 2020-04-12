@@ -1,0 +1,79 @@
+/* ---------------------------------devpcs.css--------------------------------------------- */
+body    {margin:15px;color:yellow;background-color:black;overflow:scroll; }
+img.imx {width:15%;height:35px;vertical-align:top;}
+img.imm {width:34%;height:32px;vertical-align:top;border:1px solid black;box-shadow:2px 0px 5px darkblue;}
+#mpage  {width:960px;margin:auto;border:double pink 5px;
+			border-top-left-radius:18px;border-top-right-radius:18px;border-bottom-left-radius:18px;border-bottom-right-radius:18px;}
+/* header,section,footer 	{display:block;width:100%;}
+#tb 	{display:block;width:100%;height:auto;} */
+#apDiv1 {
+	width:100%;	height:100px;
+	/*background-image:url(../images/hfboth/hg0.jpg);*/
+	border:solid lightgray 1px;border-top-left-radius:15px;border-top-right-radius:15px;	
+}
+/*nav 	{float:left;width:235px;height:auto;margin:0;}*/
+#apDiv2 {		
+	float:left;width:25%;height:323px;margin:0;
+/*	background-color:#9F9;*/
+	background-image:url(../images/x5_1.jpg);
+}
+/*artical	{float:right;width:708px;height:auto;margin:0;}*/
+#apDiv3 {
+	float:right;width:75%;height:323px;margin:0;
+	background-color:#C9F;
+/*  background-image:url(../images/x5.jpg);*/
+}
+#apDiv4 {
+	width:100%;height:100px;
+	color:#990000;font-size:11pt;font-weight:bold;
+  /*background-color:#0FF;
+	background-image:url(../images/hfboth/bg0.jpg);*/
+	border:solid lightgray 1px;border-bottom-left-radius:15px;border-bottom-right-radius:15px;  
+}
+#apDivA {
+	width:95%;height:auto;
+	background-color:#000;
+	/*padding:10px;*/
+	border:1px solid #F00;
+}
+/*-----*/
+#apDiv1 span.spv {float:right;margin-top:0px;color:navy;font-weight:bolder;}
+#apDiv1 span a img.nav1i  {margin-left:25px;border:1px solid blue;box-shadow:-5px 5px 5px #0FF;}
+#apDiv1 span a.nav1 {text-decoration:none;background-color:#0FF;border:1px solid blue;font-weight:bolder;}
+#apDiv1 span a.n1 {color:brown;font-size:13px;}
+#apDiv1 span a.n2 {color:darkblue;font-size:17px;}
+#apDiv1 span a.nav1:hover,#apDiv1 span a img.nav1i:hover  {
+                color:red;background-color: yellow;border:1px solid purple;box-shadow:5px 5px 5px pink;}
+/*-----*/
+.sect {display:none;width:100%;height:auto;border:0px solid white;}
+/*-----*/
+#v43 div.iv43     {margin:4px 4px;width:48.6%;height:311px;background-color:#FFEFDC;border:2px solid darkred;}
+#v43 div img.im43 {float:left;width:100%;height:100%;border:0px solid darkred;}
+.sp43 		      {color:darkblue;font-weight:bolder;}
+/*-----*/
+#v44 div.iv3      {margin:4px 5px;width:32%;height:auto;border:0px solid gray;}
+#v44 div img.imv3 {float:left;width:55%;height:96px;border:2px solid darkred;}
+span.sp4 		  {float:left;margin-top:35px;width:42%;color:darkblue;font-weight:bolder;text-align:middle;border:0px solid darkred;}
+/*-----*/
+#v46 div.iv33     {margin:4px 5px;width:48.8%;height:auto;background-color:#FFEFDC;border:0px solid darkred;}
+#v46 div img.imv3 {float:left;width:40%;height:96px;border:2px solid darkred;}
+span.sp3 		  {float:left;width:30%;margin-top:35px;color:darkblue;font-weight:bolder;text-align:middle;border:0px solid darkred;}
+/*-----*/
+#im1 div.iv3      {margin:4px 5px;width:48%;height:auto;border:0px solid gray;text-align:center;}
+#im1 div img.imv3 {float:left;width:50%; height:79px;border:2px solid darkred;}
+#im1 div.f1,#v43 div.f1,#v44 div.f1,#v46 div.f1    {float:left;}
+#im1 div.f2,#v43 div.f2,#v44 div.f2,#v46 div.f2    {float:right;}
+#im1 div.bc1,#v44 div.bc1  {background-color:orange;}
+#im1 div.bc2,#v44 div.bc2  {background-color:#0FF;}
+#im1 div.bc3,#v44 div.bc3  {background-color:#CF0;}
+#im1 div.bc4,#v44 div.bc4  {background-color:yellow;}
+#im1 div.bc5,div.bc5  {background-color:pink;}
+/*-----*/
+#tbmenu1 a    { text-decoration: none; font-weight:bold; font-size:22px;text-shadow:1px 1px 2px gray;}
+#tbmenu1 td       { height:40px; }
+#tbmenu1 td:hover { background-color:#F60; }
+#tbmenu1 td:hover a {  background-color:#FD0; border:solid 2px green; box-shadow:5px 3px 5px #CF0;}
+#LQRcode        { display:none; z-index:15; position:fixed; top:16%; left:37%; width:320px; height:320px; border:4px solid darkblue;}
+#counters {text-decoration:none;font-family:Algerian;font-weight:bolder;color:#990000;background-color:#FFFFCC;border:3px double darkblue;box-shadow:3px 3px 5px gray;}
+.Fta {text-decoration:none;font-family:Algerian;font-weight:bolder;color:#990000;background-color:#FFFFCC;box-shadow:3px 3px 5px gray;}
+/* ---------------------------------devpcs.css--------------------------------------------- */

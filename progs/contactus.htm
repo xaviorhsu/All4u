@@ -1,0 +1,118 @@
+<script type="text/javascript" charset="utf-8">
+try{var _hinet = parent.document.getElementsByTagName("frameset");for(var i=0;i<_hinet.length;i++){_hinet[i].cols="*,0";}}
+catch(err){}
+$(parent.document.getElementById("adpage")).remove();
+</script>
+<!-- 聯絡我們---contactus.htm----start----------------------------------------------------- -->
+<style>
+.gray12 { font: 17px darkgreen solid;height:30px;}
+#fom_D table {width:99%;margin-top:5px;color:purple;border:4px solid orange;box-shadow:5px 5px 5px #0FF;vertical-align:middle;}
+#fom_D table a { text-decoration: none;}
+#fom_D table a:active,#fom_D table a:hover {text-decoration: underline;color:yellow ;background-color:brown; }
+</style>
+<script language="JavaScript" charset="utf-8">
+  function showmap(s){
+    var madd=["pb=!1m0!3m2!1szh-TW!2stw!4v1484284672060!6m8!1m7!1slPUhoYscyFyM-a_byPdPRw!2m2!1d22.98729549669911!2d120.209008098651!3f55.08!4f4.430000000000007!5f0.7820865974627469","pb=!1m18!1m12!1m3!1d3672.995730467545!2d120.2069426140291!3d22.987184484970946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e76865c301191%3A0x2544c9f0d86dd975!2z5aSp5Li75pWZ5Y-w5Y2X5pWZ5Y2A5Lit6I-v6IGW5q-N5Li75pWZ5bqn5aCCIE9VUiBMQURZIFFVRUVOIE9GIENISU5BIENBVEhFRFJBTCBUQUlOQU4gRElPQ0VTRQ!5e0!3m2!1szh-TW!2stw!4v1484281851316"]
+    document.getElementById("ifm").src="https://www.google.com/maps/embed?"+madd[s];}
+</script>	
+<!-- --------------------------------------------------------------------------------------- -->      
+      <form name="fom_D" id="fom_D" method="post" onsubmit="" >
+        <table align="center">
+          <tr bgcolor="#FFEFDF">
+              <td align="center" width="22%" class="gray12">*
+                  <select id="sem" name="sem" class="gray12" style="box-shadow:3px 3px 3px gray;"  >
+                        <option value="建議">建　　議</option>                                  
+                        <option value="指教">指　　教</option>
+                        <option value="其它">其　　它</option>
+                  </select>：
+              </td>
+              <td width="78%" class="gray12">
+              <span id="spna3" class="sem" style="display: block;">　<==請選事由　　　
+              <strong><u><font color="red" size="4">【請寫給我們 / 聯絡我們】</font></u></strong><span id="dontMsg">&nbsp;&nbsp;</span></span>              
+              </td>
+          </tr>
+          <tr bgcolor="99CCCC">
+              <td align="center" class="gray12">*聯絡人名：</td>
+              <td class="gray12"><input name="m_realname" type="text" class="blank2" id="m_realname" value="" size="23"/>
+              【英文姓名】<input name="m_englishname" type="text" class="blank2" id="m_englishname" value="" size="23"/>
+              </td>
+          </tr>
+          <tr bgcolor="#FFEFDF">
+            <td align="center" class="gray12">*電子信箱：</td>
+              <td class="gray12">
+                <input name="m_email" type="email" class="blank2" id="m_email" value="" size="35" />　※請填寫以便聯絡回覆通知
+              </td>                
+          </tr>          
+          <tr bgcolor="99CCCC">
+            <td align="center" class="gray12">*行動電話：</td>
+            <td class="gray12">
+                <input name="m_cell" type="text" class="blank2" id="m_cell" value="" size="15" maxlength="10"/>　※請填寫以便須要時發送簡訊聯絡回覆通知
+            </td>
+          </tr>
+          <tr bgcolor="#FFEFDF">
+            <td align="center" class="gray12">*留言內容：<br/>(請填寫)</td>
+              <td class="gray12">
+                <textarea name="m_txtfd" id="m_txtfd" rows="2" style="width:95%" ></textarea>
+              </td>
+            </tr>
+          <tr bgcolor="99CCCC">
+            <td align="center" class="gray12"> 備　　註：</td>
+              <td class="gray12">
+              ■
+              </td>
+            </tr>          
+          <tr bgcolor="#FFEFDF"><td colspan="2" align="center" valign="middle">
+                  <input name="Submit2"   type="reset"  class="gray12" value="清除重填" onclick="$('#fom_D table tr td span.sem').hide();$('#spna3').show();" />
+                  <input name="Submit3"   type="submit" class="gray12" value="確認送出"/></td>
+		  </tr>
+        </table>              
+      </form>
+<!-- ----------------------------------------------------------------------------------- -->
+<script type="text/JavaScript">
+function snd_mal(id){
+  var result1=chk_fom_S(document.getElementById(id));
+  if(result1) {
+      var test_mail=(HTTP_IP=="websrv.local.tw/tncath/")?true:false;      
+      var htip    = (test_mail)?"tncath.catholic.org.tw/" : HTTP_IP;
+      var url     = "http://"+htip+"php/gp_Ajax.php?js_cb=?";
+      var options = (test_mail)?"tm=y&opt=snd_mal&"+$("#"+id).serialize():"opt=snd_mal&"+$("#"+id).serialize();   //alert(options);
+          callAjaxDo("dontMsg","s",url,options);
+  }
+  return false; 
+}
+//-- --//
+function chk_fom_S(f) {
+    var errmsg=""; var cnt=0;
+    switch ($("#sem :selected").val()) {
+        case ""        : { cnt++; errmsg+=cnt+'.請選擇事由\n'; break; }
+        case "奉獻捐款": { if ( f.m_money.value == '' ){ cnt++; errmsg+=cnt+'.請輸入您善心捐款金額\n'; }
+                           if ( f.m_city.value == ''||f.m_canton.value == ''||f.m_address.value == '' )
+                                                       {	cnt++; errmsg+=cnt+'.請輸入完整的聯絡地址\n';   }
+                           if ( f.m_phoneArea.value == ''||f.m_phone.value == '')
+                                                       {	cnt++; errmsg+=cnt+'.請輸入完整的聯絡電話(區域號碼+電話)\n';   }
+                           break; }
+        case "參訪朝聖": { if ( f.m_date.value == '' ){	cnt++; errmsg+=cnt+'.請輸入參訪朝聖日\n';  }
+                           if ( f.m_time1.value == ''||f.m_time2.value == '' ){	cnt++; errmsg+=cnt+'.請輸入參訪時間\n';  }
+                           if ( f.m_unit.value == '' ){	cnt++; errmsg+=cnt+'.請輸入您的單位\n';  }
+                           if ( f.m_person.value == '' ){	cnt++; errmsg+=cnt+'.請輸入來訪人數\n';  }
+                           break; }
+        case "其　　它": { if ( f.m_subj.value == '' ){	cnt++; errmsg+=cnt+'.請輸入事由摘要\n';  } break; }
+    }    
+    if ( f.m_realname.value == '' )
+        {	cnt++; errmsg+=cnt+'.請輸入您的大名\n';  }
+        
+    if ( f.m_email.value == '' || !chk_email(f.m_email.value))
+        { cnt++; errmsg+=cnt+'.請輸入(正確的)電子信箱\n';  }
+        
+    if ( f.m_cell.value == '' )
+        {	cnt++; errmsg+=cnt+'.請輸入行動電話\n';   }
+
+    if ( f.m_txtfd.value == '' )
+        {	cnt++; errmsg+=cnt+'.留言內容須要您的話語\n';   }    
+    
+    if (cnt) {	alert(errmsg); return false; }
+    else     {  return confirm('確定資料填寫正確？');   }
+}
+</script>
+<!-- 聯絡我們---contactus.htm----end--------------------------------------------------- -->
+<noscript>
