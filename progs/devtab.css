@@ -1,23 +1,26 @@
 /* ---------------------------------devtab.css--------------------------------------------- */
-body    {background-color:darkblue;}
-.mpage  {width:100%;font-size:73%;}
-.apDiv1A{float:left;width:25%;height:100%;display:flex;align-items:center;justify-content:center}
-.nav1i  {float:right;width:80%;}
-.D1Asp1	{font-size:68%;}
-.apDiv1B{float:right;width:74%;height:100%;}
-.Dd0	{font-size:65%;}
-.apDiv1B div {float:right;}
-.spv 	{margin:2px 0.8%;}
-.spv2	{margin:3px 0.8%;}
-.apDiv2 {float:left;width:25%;}
-#tbmenu1 a    {font-size:60%;}
-.apDiv3 {float:right;width:75%;}
+body,html    {background-color:darkblue;}
+.mpage  {width:100%;font-size:82%;}
+#apDiv1 {height:85px;}
+.apDiv1A{margin:0;}
+span.D1Asp1	{font-size:80%;}
+.apDiv1B{margin-top:5px;}
+.apDiv1B div {float:right;font-size:95%;}
+#Dd0	{margin-top:3px;font-size:65%;}
+.list span div {width:80px;}
+.spv 	{margin:1px 0;}
+.spv2	{margin:1px 0;}
+img.nav1i  {margin:0;max-width:60%;max-height:60%;}
+#apDiv3 {width:74.8%;}
+#tbmenu1 tr td div a b   {font-size:56%;}
 #im1 a 	{font-size:65%;}
 #im1 div.iv3     {width:46%;}
-#v43 div.iv43    {width:48%;}
-#v44 div.iv3     {width:31%;}
-span.sp4 		 {font-size:70%;}
-#v46 div.iv33    {width:47%;}
-span.sp3 	     {font-size:70%;}
-#apDiv4 div {margin:3% auto;font-size:70%;}
+#v43 div.iv43    {width:47%;}
+#v44 div.iv3     {width:30%;}
+span.sp4 		 {margin-top:15%;font-size:65%;}
+#v46 div.iv33    {width:46%;}
+span.sp3 	     {margin-top:10%;font-size:70%;}
+#apDiv4 {height:72px;}
+#apDiv4 div 	 {margin:2% auto;font-size:68%;}
+#apDiv4 div img  {height:60%;}
 /* ---------------------------------devtab.css--------------------------------------------- */

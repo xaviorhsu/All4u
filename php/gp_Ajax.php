@@ -1,5 +1,5 @@
 <?php
-header('Access-Control-Allow-Origin: http://websrv.local.tw,http://tncath.catholic.org.tw ');
+header('Access-Control-Allow-Origin: http://websrv.local.tw,https://tncath.catholic.org.tw ');
 //header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST,GET');
 header('Access-Control-Max-Age: 1000');

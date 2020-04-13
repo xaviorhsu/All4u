@@ -1,12 +1,21 @@
 //----------------------------------------------------------------------------------------------- 
   var HTTP_IP=(location.hostname=="websrv.local.tw")?"http://"+location.hostname+"/Alieaea/" : "https://tncath.catholic.org.tw/Alieaea/";
-  var opt;var t;var url=HTTP_IP+"php/gp_Ajax.php?js_cb=?";//var url=HTTP_IP+"php/gp_Ajax.php?js_cb=?";
-//-----------------------------------------------------------------------------------------------  
-  // array LX=["name;Pic;addr;forms"] ==> type=w(web),f(facebook),v(vidio)
-  var L0=["０８０家服社;L0;https://www.facebook.com/TOP5688;VqH0ez9LizI"];	var L1=["荷風然民宿;L1;http://a0982277513.yilan-travel.com.tw/;adj6an1rAxQ"];
-  var L2=["川雅居民宿;L2;https://www.facebook.com/ChuanYaJuBnB/;"]; var L3=["情藝廊民宿;L3;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585;"];
-  var L4=["樂客包旅棧;L4;http://picbear.online/place/261785834182361;"]; var L5=["圓方居民宿;L5;https://www.booking.com/hotel/tw/yuan-fang-ju-min-su-jing-guan-can-ting.zh-tw.html;"];
-  var L6=["川雅居民宿;L6;https://www.facebook.com/ChuanYaJuBnB/;"];
+  var opt;var t;var url=HTTP_IP+"php/gp_Ajax.php?js_cb=?";
+//---------０８０家服社-VqH0ez9LizI---------東照山心樂園-wxlQyjYwZic--------------------------
+// array LX=["name;Pic;addr;forms"] ==> type=w(web),f(facebook),v(vidio)
+  var L0 =["０８０家服社;L0;https://www.facebook.com/TOP5688;rtKg1XiTILM"];
+  var L1 =["圓方居民宿;L1;https://www.booking.com/hotel/tw/yuan-fang-ju-min-su-jing-guan-can-ting.zh-tw.html;0R3Rs_SJPX0"];
+  var L2 =["好假期民宿;L2;http://bestday.hi-bnb.com/;Tw9uMxKlnXU"];
+  var L3 =["適合院民宿;L3;http://www.fanlu.com.tw/;"];
+  var L4 =["太平古厝民宿;L4;https://www.facebook.com/chienhui59/;czJffPoycHc"];
+  var L5 =["樂客背包棧;L5;https://localbackpacker.business.site/;"];
+  var L6 =["川雅居民宿;L6;https://www.facebook.com/ChuanYaJuBnB/;xz7SZayccVM"];
+  var L7 =["東照山心樂園;L7;https://www.facebook.com/Dongzhaoshan.Heartland.Homes/;glarUF8vG38"];
+  var L8 =["曼陀藝術村;L8;https://www.facebook.com/TheAquarianConspiracy.TW/;https%3A%2F%2Fwww.facebook.com%2FTheAquarianConspiracy.TW%2Fvideos%2F946607475547488%2F"];
+  var L9 =["拾穗山莊民宿;L9;https://www.facebook.com/gleaningmanor/;https%3A%2F%2Fwww.facebook.com%2Fgleaningmanor%2Fvideos%2F385901495660530%2F"];
+  var L10=["情藝廊民宿;L10;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585;"];
+  var L11 =["瑞穗溫泉山莊;L11;http://www.js-hotspring.com.tw/;mxWXf0OMrJM"];
+  var L12=["荷風自然宿;L12;http://a0982277513.yilan-travel.com.tw/;adj6an1rAxQ"];  
 //-----------------------------------------------------------------------------------------------
 /*  var L1=["p03;;;"]; var L2=["p61;f;https://www.facebook.com/TOP5688;"]; var L3=["p41;w;https://www.dfholidays.com/;"];
   var L4=["p62;w;http://www.happydreamstates.com.tw;"]; var L5=["p21;w;https://www.seniormagichouse.com/;"];
@@ -17,18 +26,22 @@
   var im11 = L8; var im12 = L5.concat(L22);  					 var im13 = L10; 			var im14 = L3;
   var im15 = L6.concat(L7).concat(L9).concat(L_10);  var im16 = L2.concat(L4);*/
 //-----------------------------------------------------------------------------------------------
-  var vL0  = ["p00;p00i;VqH0ez9LizI"]; var vL1 = ["p01;pxxi;adj6an1rAxQ"];
-  var vL2  = ["p02;pxxi;NjYWBo0otHM"]; var vL3 = ["p03;pxxi;NjYWBo0otHM"];
-  var vL4  = ["p04;pxxi;NjYWBo0otHM"]; var vL5 = ["p05;pxxi;NjYWBo0otHM"];
-  var vL6  = []; var vL7  = []; var vL8 = []; var vL9 = []; var vLa = []; var vLb = []; var vLc = [];
+  var vL0  = ["p00;p00i;rtKg1XiTILM"]; 		var vL1 = ["p01;pxxi;0R3Rs_SJPX0"];
+  var vL2  = ["p02;pxxi;Tw9uMxKlnXU"]; 		var vL3 = ["p03;pxxi;OBLl6eeLfhk"];
+  var vL4  = ["p04;pxxi;czJffPoycHc"]; 		var vL5 = ["p05;pxxi;AJS24Cb5i7w"];
+  var vL6  = ["p06;pxxi;xz7SZayccVM"]; 		var vL7 = ["p07;p07i;wxlQyjYwZic"];
+  var vL8  = ["f08;pxxi;946607475547488"]; 	var vL9 = ["f09;pxxi;385901495660530"];
+  var vLa  = ["p10;pxxi;5woU_Ur1fVw"]; 		var vLb = ["p11;pxxi;mxWXf0OMrJM"]; 		var vLc = ["p12;pxxi;pRpyyUAsOqQ"];
 //-----------------------------------------------------------------------------------------------
   var v430 = [];
-  var v440 = ["v01;NjYWBo0otHM","v02;9tInTTSKR0w","v03;BxoThpNPpMc","v04;gC20UHvcUvI","v05;l8QU-aVw7Og"];
-//array v450=["Pic;addr/vidio;name;forms"] ==> addr=web/facebook/blog,v(vidio),google's forms
-  var v450 = ["f01;;希伯崙商訊<br>【有關表單】;https://docs.google.com/forms/d/1i5StDRSlduAziJKCSa60ZJqILx46ccX4w7m3vID6HhU/viewform?edit_requested=true"];
-  var v460 = ["荷風然民宿;p01;http://a0982277513.yilan-travel.com.tw/","川雅居民宿;p02;https://www.facebook.com/ChuanYaJuBnB/","情藝廊民宿;p03;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585","樂客包旅棧;p04;http://picbear.online/place/261785834182361","圓方居民宿;p05;https://www.booking.com/hotel/tw/yuan-fang-ju-min-su-jing-guan-can-ting.zh-tw.html",];
-  var v461 = [];
-  var v470 = ["q01;KMwj0KsAAOo;免費商店<br>共食廚房","q02;gmFMwsB2Fzw;五甲社區<br>無價市集","q03;WZuAOMZU5Qo;饅頭夫妻<br>環島捐愛"];
+//array v440/v450/v470=["Img;addr/video/pic;name;forms"] ==> addr=web/facebook/blog,v(video),pic(pics no);google's forms  
+//var v440 = ["v41;NjYWBo0otHM;創意漂流木<br>雕塑班<br>【郭素亦】;","v42;9tInTTSKR0w;峇里島Made<br>創意木雕班<br>【Ｏ Ｏ】;","v43;BxoThpNPpMc;創意木工車床<br>初級班<br>【范宸瑋】;","v44;gC20UHvcUvI;創意二胡手工<br>製作班<br>【楊正棟】;","v45;l8QU-aVw7Og;創意石雕<br>刻字班<br>【劉東偉】;","v46;5woU_Ur1fVw;創意木頭研磨<br>成型班<br>【郭宗松】;","v47;AJS24Cb5i7w;創意烙畫<br>初級班<br>【張格逢】;","v48;l8QU-aVw7Og;無限創意<br>木雕班<br>【沈正庚】;"];
+  var v440 = ["v41;cJXXeutVWus;大樹遊畫<br>戶外寫生;","v42;y32EUUNwxS0;馬爹Made<br>印尼木雕;"];
+  var v450 = ["p510;1;希伯崙商訊<br>【有關表單】;https://docs.google.com/forms/d/1i5StDRSlduAziJKCSa60ZJqILx46ccX4w7m3vID6HhU/viewform?edit_requested=true","p520;3;香草潔護牙粉<br>【相關資料】;https://www.air-beautyspa.com/denta-care-toothpowder","p530;2;身心潔康皂<br>【相關資料】;","p540;2;回家友善種田<br>【相關資料】;"];
+  var v470 = ["v71;KMwj0KsAAOo;免費商店<br>共食廚房;","v72;gmFMwsB2Fzw;五甲社區<br>無價市集;","v73;WZuAOMZU5Qo;饅頭夫妻<br>環島捐愛;","v74;MV7kfEBjjvg;若竹兒<br>愛心商店;"];
+// ----- //  
+  var v460 = ["圓方居民宿<br>【嘉義】;p01;https://www.booking.com/hotel/tw/yuan-fang-ju-min-su-jing-guan-can-ting.zh-tw.html","好假期民宿<br>【嘉義】;p02;http://bestday.hi-bnb.com/","適合院民宿<br>【嘉義】;p03;http://www.fanlu.com.tw/","太平古厝民宿<br>【嘉義】;p04;https://www.facebook.com/1837344403209343/posts/2442651886011922/","樂客背包旅棧<br>【台南】;p05;https://localbackpacker.business.site/","川雅居民宿<br>【高雄】;p06;https://www.facebook.com/ChuanYaJuBnB/"];
+  var v461 = ["東照山心樂園<br>【高雄】;p07;https://www.facebook.com/Dongzhaoshan.Heartland.Homes/","曼陀藝術村<br>【高雄】;f08;https://www.facebook.com/TheAquarianConspiracy.TW/","拾穗山莊民宿<br>【台東】;f09;https://www.facebook.com/gleaningmanor/","情藝廊民宿<br>【花蓮】;p10;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585","瑞穗溫泉山莊<br>【花蓮】;p11;http://www.js-hotspring.com.tw/","荷風自然民宿<br>【宜蘭】;p12;http://a0982277513.yilan-travel.com.tw/"];
   var arr  = [];
   var audo;  var current_muc=Math.floor(Math.random()*2);
   $("#ado").attr("src","musics/mux"+current_muc+".mp3").prop("volume","0.8");
@@ -39,9 +52,10 @@
       $('#apDiv4').css({'background-image':'url(images/hfboth/bg'+current_hgp+'.jpg','background-size':'cover'});
       var yymmddcc=show_today();  $('#show').html(screen.width+"*"+screen.height);
       date='<b>　Welcome To Our Web Site　民國'+(yymmddcc[0]-1911)+'年'+yymmddcc[2]+'月'+yymmddcc[3]+'日 星期'+yymmddcc[4]+'&nbsp;</b>';
-      $('#Dd0').html(date);  fun_pic(); fun1('tb2','#tbmenu1 tr:eq(0) td a',''); $("#ado").hide(); funB(1);
+      $('#Dd0').html(date);  fun_pic(); fun1('tb2','#tbmenu1 tr:eq(0) td a','');$('#tbmenu1 tr:eq(0) td').css('background-color','brown');
+	  $("#ado").hide(); funB(0,'pic0',pic0.length);
       //jQuery("#a14").mouseover(function(){jQuery("#LQRcode").show();}).mouseout(function(){jQuery("#LQRcode").hide();});
- 	  $("#pic1").hover( function(){ if(audo.played) audo.pause(); clearInterval(t);} , function(){ if(audo.paused) audo.play();	t=setInterval( mytime,4000); } ); 
+ 	  $("#pic1,#pic2").hover( function(){ if(audo.played) audo.pause(); clearInterval(tn);} , function(){ if(audo.paused) audo.play(); t=setInterval( mytime,4000); tn=t; } ); 
 	  // webcounters //
 	  opt = "opt=web_cnts"; //alert(url+"<==>"+opt);
   　　callAjaxDo("counters",'s',url,opt);
@@ -49,61 +63,71 @@
       $("#a00,#a11,#a12,#a14,#a15,#a16,#a18,#a19,#a43,#a44,#a45,#a46,#a47").css("cursor","pointer").click(function(){
         $('#apDiv1 span a.nav1,#apDiv4 span a.nav1').css({'color':'','background-color':'','box-shadow':''});
 		$('#ifm,#v22 img').attr("src",""); $('#tb div.sect,#tb iframe.sect').hide();
-        var pid=$(this).attr("id"); var i = pid.substring(1); var j = pid.substring(2); i=(i=="45"||i=="47")?"44":i; var sw = 0;
+        var pid=$(this).attr("id"); var i = pid.substring(1); var j = pid.substring(2); var sw = 0;
 		$('#f44,#if1').attr("src","");	audo=document.getElementById("ado");
 		switch(pid) { 
-			case "a00":		i = "55"; fun1('tb2','#tbmenu1 tr:eq(0) td a','');	break;
+			case "a00":		sw = 1;i = "55"; fun1('tb2','#tbmenu1 tr:eq(0) td a',''); funB(0,'pic0',pic0.length);
+							$('#tbmenu1 tr:eq(0) td').css('background-color','brown');break;
 			case "a15":
 			case "a16":
 			case "a18":
-			case "a19":
-			case "a11":     var madd=["https://calendar.google.com/calendar/embed?src=mig2f56hejor8v2gkli2l8h4t0%40group.calendar.google.com&ctz=Asia%2FTaipei","progs/contactus.htm","progs/copyright.htm","https://www.google.com/maps/embed?pb=!4v1562100564856!6m8!1m7!1s5uCkf5zBzMUCKphHifpGsA!2m2!1d23.43913057351233!2d120.6037758661164!3f137.8304896226552!4f11.627448721333849!5f0.7820865974627469","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13622.27355584881!2d120.60238164411471!3d23.44045528598859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eebc44c61e771%3A0xef1d60b13624310b!2z6buO5piO5ZyL5bCP!5e0!3m2!1szh-TW!2stw!4v1562136411546!5m2!1szh-TW!2stw"]
+			//case "a19":
+			case "a11":     var madd=["https://calendar.google.com/calendar/embed?src=mig2f56hejor8v2gkli2l8h4t0%40group.calendar.google.com&ctz=Asia%2FTaipei","progs/contactus.htm","progs/copyright.htm","https://www.google.com/maps/embed?pb=!4v1571654445799!6m8!1m7!1sPkM6IOEIEX8SyTg4jJqAcQ!2m2!1d23.43917643965867!2d120.6048328138822!3f4.32!4f19.36!5f0.7820865974627469","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13622.27355584881!2d120.60238164411471!3d23.44045528598859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eebc44c61e771%3A0xef1d60b13624310b!2z6buO5piO5ZyL5bCP!5e0!3m2!1szh-TW!2stw!4v1562136411546!5m2!1szh-TW!2stw"]
 							var s = 0;
 							switch(j) { case "1": s = 0; break; case "5": s = 1; break; case "6": s = 2; break;
 										case "8": s = 3; break; case "9": s = 4; break; }
 							$('#ifm').attr("src",madd[s]);	i = 11; sw = 1;	break;
+			case "a19":
 			case "a12":
-			case "a14":     sw = 1; var pimg = "images/x15.jpg"; var W = "100%";
-							switch(i) {case "12": break;case "14": pimg = "images/MywebQR.png"; W = "320px"; break;}
-							i = "22";$('#v22 img').attr("src",pimg).css("width",W); break;
+			case "a14":     sw = 1; var pimg,pwt;  clearInterval(tn);
+							switch(i) {	case "19":	case "12": pimg="images/080map.jpg";     pwt="98%";   break;
+										case "14": pimg="images/MywebQR.png"; pwt="323px"; break;  }
+							i = "22"; $('#pic2').hide(); $('#pic0').attr({"src":pimg,"onclick":"","title":""}).css({'width':pwt,"cursor":""}).show(); break;
 			case "a43":		sw = 1; j=(i=="43")?"0":j; fun2("v"+i,j); break;
-			case "a44":		sw = 1; fun2("v"+i,j); break;
-			case "a45":		sw = 1; fun2("v"+i,j); break;
+			case "a44":
+			case "a45":
+			case "a47":		sw = 1;	i = "44";  fun2("v"+i,j); break;
 			case "a46":		sw = 1; fun2("v"+i,j); break;
-			case "a47":		sw = 1; fun2("v"+i,j); break;
 		}
 		if (sw) { $(this).css({'color':'red','background-color':'yellow','box-shadow':'-5px 5px 5px gold'});}
 		if(audo.paused) audo.play(); $('#v'+i).show();
        });
   });
-//-----------------------------------------------------------------------------------------------  
+//----------------------------------------------------------------------------------------------- 
+var fb1="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ftncath%2Fvideos%2F"; var fb2="%2F&autoplay=1&show_text=0&width=auto";
+var yt1="https://www.youtube.com/embed/";	var yt2="?autoplay=1&version=3&html5=1";
   function fun2(S,P)	{
 	switch(S) { 
 		case "f44":   $('#v44,#v43').hide(); $("#f44").attr("src",P); $('#f44').show();
                       audo=document.getElementById("ado"); if(audo.played) audo.pause(); 
 		break;
 		case "v43":   $('#tb div.sect,#tb iframe.sect').hide();$('#v43').show();
-					  $("#v43 div.iv43").html('<img class="im43" src="images/prods/p01.jpg" />').css("cursor","");
+					  $("#v43 div.iv43").html('<img class="im43" src="images/prods/p00.jpg" />').css("cursor","");
 					  //$("#v43 div img").attr({"src":"images/prods/p01.jpg","onclick":""}).css("cursor","");					  
 					  switch(P) {case "0": v430=vL0; break;case "1": v430=vL1; break;case "2": v430=vL2; break;case "3": v430=vL3; break;
 								 case "4": v430=vL4; break;case "5": v430=vL5; break;case "6": v430=vL6; break;case "7": v430=vL7; break;
 								 case "8": v430=vL8; break;case "9": v430=vL9; break;case "a": v430=vLa; break;case "b": v430=vLb; break;
 								 case "c": v430=vLc; break;}
-					  arr = v430; for (var item=0;item<arr.length;item++) { var ss=arr[item].split(";");					  
-		$("#v43 div:eq("+item+") img").attr({"src":"images/ppics/"+ss[0]+".jpg","onclick":"fun2('f44','https://www.youtube.com/embed/"+ss[2]+"?autoplay=1&version=3&html5=1');"}).css('cursor','pointer');
-					  $("#v43 div:eq(1) img").attr("src","images/ppics/"+ss[1]+".jpg"); }
+					  arr = v430; for (var item=0;item<arr.length;item++) { var ss=arr[item].split(";");
+						if (ss[0].substr(0,1)=="p")	{ part1=yt1;	part2=yt2;};	if (ss[0].substr(0,1)=="f")	{ part1=fb1;	part2=fb2;};
+		$("#v43 div:eq("+item+") img").attr({"src":"images/ppics/"+ss[0]+".jpg","onclick":"fun2('f44','"+part1+ss[2]+part2+"');"}).css('cursor','pointer');
+					  $("#v43 div:eq(1) img").attr({"src":"images/ppics/"+ss[1]+".jpg","onclick":"$('#tb div.sect,#tb iframe.sect').hide();$('#v55').show();$('#apDiv1 span a.nav1').css({'color':'','background-color':'','box-shadow':''});","title":"(點擊『回前頁』)"}).css('cursor','pointer'); }
 		break;
-		case "v44":   $("#v44 div img").attr({"src":"images/prods/p01.jpg","onclick":""}).css("cursor","");	$("#v44 div span.sp4").html("");
+		case "v44":   $("#v44 div img").attr({"src":"images/prods/p00.jpg","onclick":""}).css("cursor","");	$("#v44 div span.sp4").html("");
 					  switch(P) {case "4": arr=v440; break;case "5": arr=v450; break;case "7": arr=v470; break; }
 					  for (var item=0;item<arr.length;item++)	{ var ss=arr[item].split(";");
 						  $("#v44 div:eq("+item+") img").attr("src","images/vpics/"+ss[0]+".jpg");   
-						  if(ss[1]!="") $("#v44 div:eq("+item+") img").attr("onclick","fun2('f44','https://www.youtube.com/embed/"+ss[1]+"?autoplay=1&version=3&html5=1');").css('cursor','pointer');					  
-						  if(P=="5")  { $("#v44 div:eq("+item+") span").html("<a>"+ss[2]+"</a>");
-										$("#v44 div:eq("+item+") span a").attr({"href":ss[3],"target":"MFrame"}).css("text-decoration","none");	}
-						  if(P=="7") 	$("#v44 div:eq("+item+") span").html(ss[2]);	
+						  if(ss[0].substr(0,1)=="v") $("#v44 div:eq("+item+") img").attr("onclick","fun2('f44','https://www.youtube.com/embed/"+ss[1]+"?autoplay=1&version=3&html5=1');").css('cursor','pointer');					  
+						  if(P=="5") { if(ss[0].substr(0,1)=="p") {olk="$('#v44,#pic0').hide();$('#v22,#pic2').show();funB(1,'"+ss[0]+"',"+ss[1]+");"; }
+						  else       { olk="fun1('iw1',this,'"+ss[1]+"')" }
+									   $("#v44 div:eq("+item+") img").attr("onclick",olk).css("cursor","pointer");
+									   $("#v44 div:eq("+item+") span").html("<a>"+ss[2]+"</a>");
+									   if(ss[3]) {	$("#v44 div:eq("+item+") span a").attr({"href":ss[3],"target":"MFrame"}).css("text-decoration","none"); }
+									 }
+						  if(P=="4"||P=="7") $("#v44 div:eq("+item+") span").html(ss[2]);	
 					  }  
 		break;
-        case "v46":   $("#v46 div span.sp3").html("【夥伴】");	$("#v46 div img").attr({"src":"images/prods/p01.jpg","onclick":""}).css("cursor","");
+        case "v46":   $("#v46 div span.sp3").html("<br>【夥伴】");	$("#v46 div img").attr({"src":"images/prods/p00.jpg","onclick":""}).css("cursor","");
 					  if (P=="1")	{ arr = v461;	$("#v46 div span a").attr("onclick","fun2('v46','0');"); }
 					  else 			{ arr = v460;	$("#v46 div span a").attr("onclick","fun2('v46','1');"); }
 					  for (var item=0;item<arr.length;item++) { var ss=arr[item].split(";");
@@ -141,21 +165,28 @@
     }
 // ----- //
 	var pic0=new Array();var net0=new Array();
-  function fun_pic() {	for (var i=0;i<=6;i++)	{ var pp=this["L"+i][0].split(";"); //alert(pp[0]+"<>"+pp[1]+"<>"+pp[2]+"<>"+pp[3]);
+  function fun_pic() {	for (var i=0;i<=12;i++)	{ var pp=this["L"+i][0].split(";"); //alert(pp[0]+"<>"+pp[1]+"<>"+pp[2]+"<>"+pp[3]);
 	  pic0[i]="images/loops/"+pp[1]+".jpg"; net0[i]=pp[2];
 	   } }
 // ----- //  
-	var curpno=0; var t,V;
-  function funB(code) {
-	audo=document.getElementById("ado");
-	if ( code ) {  if(audo.paused) audo.play();	 t=setInterval( mytime,4000); }
-    else {  if(audo.played) audo.pause();	clearInterval(t); } 
+	var curpno=0; var Fnu,Fa,Fno,s1,o1,e1,w1; var tn="";
+  function funB(nu,A,Fn) {		//nu(0/1)==>0:#pic1,#1:pic2; A(img filename); Fn(img files no);
+	audo=document.getElementById("ado"); Fnu=nu;Fa=A; Fno = Fn; var sw = 0; clearInterval(tn);
+	if(nu)	{ w1="98%"; o1="$('#v22,#pic0').hide();$('#v44').show();if(audo.paused)audo.play();";
+			  if(Fno=="1") { $('#pic2').hide(); $("#pic0").attr({"src":"images/vpics/"+A+".jpg","onclick":o1,"title":"(點擊『回前頁』)"}).css({'width':w1,'cursor':'pointer'}).show(); }
+			  else { sw=1; curpno=(curpno>Fno-1)?Fno-1:curpno; s1="images/vpics/"+Fa.substr(0,3)+curpno+".jpg"; e1="(游標置此時暫停；點擊『回前頁』)";$('#pic0').hide();  }
+			}
+	else 	{ sw=1; s1=pic0[curpno]; e1="(游標置此暫停輪播；點擊『外聯』)"; w1=""; o1="fun1('iw1',this,'"+net0[curpno]+"')";	}
+	if(sw) 	{	$("#pic"+(Fnu+1)).attr({"src":s1,"onclick":o1,"title":e1}).css({'width':w1,'cursor':'pointer'}).show();
+				if(audo.paused) audo.play(); t=setInterval( mytime,4000); tn=t; }
     }
+	
   function mytime(){	 
-    curpno++; if (curpno >  pic0.length-1) { curpno = 0; }
-		$("#pic1").fadeOut(1500,function()	
-			{
-			$("#pic1").attr({"src":pic0[curpno],"onclick":"fun1('iw1',this,'"+net0[curpno]+"')"}).fadeIn(500);
+    curpno++; if (curpno > Fno-1) { curpno = 0; }
+		$("#pic"+(Fnu+1)).fadeOut(1500,function()	
+			{ if(Fnu)	{ s1="images/vpics/"+Fa.substr(0,3)+curpno+".jpg";}
+			  else      { s1=pic0[curpno]; o1="fun1('iw1',this,'"+net0[curpno]+"')"; } //alert(Fno+"<==>"+Fnu+"<==>"+curpno);
+			  $("#pic"+(Fnu+1)).attr({"src":s1,"onclick":o1,"title":e1}).fadeIn(500);
 			});
     //document.getElementById("pic1").src=pic0[curpno];
 		//var cnt=parseInt(curpno)+1;  $("#sp1").html(cnt<10?"0"+cnt:cnt);  (游標置於此時,不換頁面)

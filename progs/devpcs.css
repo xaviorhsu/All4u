@@ -1,19 +1,21 @@
 /* ---------------------------------devpcs.css--------------------------------------------- */
-body    {background-color:black;}
-.mpage  {width:950px;font-size:82%;} 
+body,html    {background-color:black;}
+.mpage  {width:100%;font-size:82%;}
 /* header,section,footer 	{display:block;width:100%;}
 #tb 	{display:block;width:100%;height:auto;} */
-.D1Asp1	{font-size:82%;}
-.apDiv1B div {float:right;}
-.n1,.n2	{margin:2px 9%;}
-.n3		{margin:3px 0%;}
+span.D1Asp1	{margin-right:10px;font-size:82%;}
+.apDiv1B div {float:right;margin-top:4px;}
+.list span div {width:82px;}
+.spv 	{margin:1px 0.5%;}
+.spv2	{margin:2px 0.5%;}
+img.nav1i  {margin-right:15px;max-width:50%;max-height:50%;}
+#apDiv3 {width:74.8%;}
 /*nav 	{float:left;width:235px;height:auto;margin:0;}*/
-.apDiv2 {float:left;width:25%;}
-#tbmenu1 a    {font-size:88%;}
+#tbmenu1 tr td div a b   {font-size:78%;}
 /*artical	{float:right;width:708px;height:auto;margin:0;}*/
-.apDiv3 {float:right;width:75%;}
-span.sp3   {font-size:85%;}
-span.sp4 	   {font-size:85%;}
-#im1 div a {font-size:85%;}
-#apDiv4 div {font-size:80%;}
+span.sp3   {font-size:87%;}
+span.sp4   {margin-top:9%;font-size:87%;}
+#im1 div a {font-size:80%;}
+#apDiv4 div {font-size:82%;margin-top:5px;}
+#apDiv4 div img  {height:70%;}
 /* ---------------------------------devpcs.css--------------------------------------------- */
