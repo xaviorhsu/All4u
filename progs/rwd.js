@@ -1,6 +1,6 @@
 //----------------------------------------------------------------------------------------------- 
-  var HTTP_IP=(location.hostname=="websrv.local.tw")?"http://"+location.hostname+"/Alieaea/" : "https://tncath.catholic.org.tw/Alieaea/";
-  var opt;var t;var url=HTTP_IP+"php/gp_Ajax.php?js_cb=?";
+  var HTTP_IP=(location.hostname=="websrv.local.tw")?"http://"+location.hostname+"/All4u/" : "https://tncath.catholic.org.tw/All4u/";
+  var opt, t, url;
 //---------０８０家服社-VqH0ez9LizI---------東照山心樂園-wxlQyjYwZic--------------------------
 // array LX=["name;Pic;addr;forms"] ==> type=w(web),f(facebook),v(vidio)
   var L0 =["０８０家服社;L0;https://www.facebook.com/TOP5688;rtKg1XiTILM"];
@@ -56,7 +56,8 @@
 	  $("#ado").hide(); funB(0,'pic0',pic0.length);
       //jQuery("#a14").mouseover(function(){jQuery("#LQRcode").show();}).mouseout(function(){jQuery("#LQRcode").hide();});
  	  $("#pic1,#pic2").hover( function(){ if(audo.played) audo.pause(); clearInterval(tn);} , function(){ if(audo.paused) audo.play(); t=setInterval( mytime,4000); tn=t; } ); 
-	  // webcounters //
+    // webcounters //
+    url = HTTP_IP+"php/gp_Ajax.php?js_cb=?";
 	  opt = "opt=web_cnts"; //alert(url+"<==>"+opt);
   　　callAjaxDo("counters",'s',url,opt);
 // ----- //      

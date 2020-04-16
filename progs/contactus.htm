@@ -63,10 +63,10 @@
 function snd_mal(id){
   var result1=chk_fom_S(document.getElementById(id));
   if(result1) {
-      var test_mail=(HTTP_IP=="websrv.local.tw/tncath/")?true:false;      
-      var htip    = (test_mail)?"tncath.catholic.org.tw/" : HTTP_IP;
-      var url     = "http://"+htip+"php/gp_Ajax.php?js_cb=?";
-      var options = (test_mail)?"tm=y&opt=snd_mal&"+$("#"+id).serialize():"opt=snd_mal&"+$("#"+id).serialize();   //alert(options);
+      //var test_mail=(HTTP_IP=="http://websrv.local.tw/tncath/")?true:false;      
+      //var htip    = (test_mail)?"tncath.catholic.org.tw/" : HTTP_IP;
+      var url     = HTTP_IP+"php/gp_Ajax.php?js_cb=?";
+      var options = (location.hostname=="websrv.local.tw")?"tm=y&opt=snd_mal&"+$("#"+id).serialize():"opt=snd_mal&"+$("#"+id).serialize();   //alert(options);
           callAjaxDo("dontMsg","s",url,options);
   }
   return false; 
