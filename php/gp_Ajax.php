@@ -128,7 +128,7 @@ if (isset($_REQUEST["opt"])) {
               $outmsg=""; $filename=$_REQUEST["fn"];  $i=count($_FILES[$filename]["name"]);
               $fmsg='&nbsp;　　　['.$i.'筆]&nbsp;《上傳檔案資訊》<br/>';
               srand((double)microtime()*1000000); $randval = rand(10,99);
-              $newname="F".date(dis).$randval;  $filna="";
+              $newname="F".date($dis).$randval;  $filna="";
               for ($j=0;$j<$i;$j++) {                            //儲存上傳的檔案
                   if ($_FILES[$filename]["error"][$j]==0) {                    
                     $Fname = explode(".",$_FILES[$filename]["name"][$j]);
