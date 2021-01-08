@@ -6,14 +6,14 @@
   var L0 =["０８０家服社;L0;https://www.facebook.com/TOP5688;rtKg1XiTILM"];
   var L1 =["圓方居民宿;L1;https://www.booking.com/hotel/tw/yuan-fang-ju-min-su-jing-guan-can-ting.zh-tw.html;0R3Rs_SJPX0"];
   var L2 =["好假期民宿;L2;http://bestday.hi-bnb.com/;Tw9uMxKlnXU"];
-  var L3 =["適合院民宿;L3;http://www.fanlu.com.tw/;"];
+  var L3 =[";L3;;"];	//var L3 =["適合院民宿;L3;http://www.fanlu.com.tw/;"];
   var L4 =["太平古厝民宿;L4;https://www.facebook.com/chienhui59/;czJffPoycHc"];
   var L5 =["樂客背包棧;L5;https://localbackpacker.business.site/;"];
   var L6 =["川雅居民宿;L6;https://www.facebook.com/ChuanYaJuBnB/;xz7SZayccVM"];
   var L7 =["東照山心樂園;L7;https://www.facebook.com/Dongzhaoshan.Heartland.Homes/;glarUF8vG38"];
   var L8 =["曼陀藝術村;L8;https://www.facebook.com/TheAquarianConspiracy.TW/;https%3A%2F%2Fwww.facebook.com%2FTheAquarianConspiracy.TW%2Fvideos%2F946607475547488%2F"];
-  var L9 =["拾穗山莊民宿;L9;https://www.facebook.com/gleaningmanor/;https%3A%2F%2Fwww.facebook.com%2Fgleaningmanor%2Fvideos%2F385901495660530%2F"];
-  var L10=["情藝廊民宿;L10;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585;"];
+  var L9 =[";L9;;"];	//var L9 =["拾穗山莊民宿;L9;https://www.facebook.com/gleaningmanor/;https%3A%2F%2Fwww.facebook.com%2Fgleaningmanor%2Fvideos%2F385901495660530%2F"];
+  var L10 =[";L10;;"];	//var L10=["情藝廊民宿;L10;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585;"];
   var L11 =["瑞穗溫泉山莊;L11;http://www.js-hotspring.com.tw/;mxWXf0OMrJM"];
   var L12=["荷風自然宿;L12;http://a0982277513.yilan-travel.com.tw/;adj6an1rAxQ"];  
 //-----------------------------------------------------------------------------------------------
@@ -70,18 +70,20 @@
 			case "a00":		sw = 1;i = "55"; fun1('tb2','#tbmenu1 tr:eq(0) td a',''); funB(0,'pic0',pic0.length);
 							$('#tbmenu1 tr:eq(0) td').css('background-color','brown');break;
 			case "a15":
-			case "a16":
-			case "a18":
+			case "a16":			
 			//case "a19":
-			case "a11":     var madd=["https://calendar.google.com/calendar/embed?src=mig2f56hejor8v2gkli2l8h4t0%40group.calendar.google.com&ctz=Asia%2FTaipei","progs/contactus.htm","progs/copyright.htm","https://www.google.com/maps/embed?pb=!4v1571654445799!6m8!1m7!1sPkM6IOEIEX8SyTg4jJqAcQ!2m2!1d23.43917643965867!2d120.6048328138822!3f4.32!4f19.36!5f0.7820865974627469","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13622.27355584881!2d120.60238164411471!3d23.44045528598859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eebc44c61e771%3A0xef1d60b13624310b!2z6buO5piO5ZyL5bCP!5e0!3m2!1szh-TW!2stw!4v1562136411546!5m2!1szh-TW!2stw"]
+			//case "a11":
+			case "a18":   	var madd=["https://calendar.google.com/calendar/embed?src=mig2f56hejor8v2gkli2l8h4t0%40group.calendar.google.com&ctz=Asia%2FTaipei","progs/contactus.htm","progs/copyright.htm","https://www.google.com/maps/embed?pb=!4v1571654445799!6m8!1m7!1sPkM6IOEIEX8SyTg4jJqAcQ!2m2!1d23.43917643965867!2d120.6048328138822!3f4.32!4f19.36!5f0.7820865974627469","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13622.27355584881!2d120.60238164411471!3d23.44045528598859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eebc44c61e771%3A0xef1d60b13624310b!2z6buO5piO5ZyL5bCP!5e0!3m2!1szh-TW!2stw!4v1562136411546!5m2!1szh-TW!2stw"]
 							var s = 0;
 							switch(j) { case "1": s = 0; break; case "5": s = 1; break; case "6": s = 2; break;
 										case "8": s = 3; break; case "9": s = 4; break; }
 							$('#ifm').attr("src",madd[s]);	i = 11; sw = 1;	break;
 			case "a19":
+			case "a11":
 			case "a12":
 			case "a14":     sw = 1; var pimg,pwt;  clearInterval(tn);
 							switch(i) {	case "19":	case "12": pimg="images/080map.jpg";     pwt="98%";   break;
+										case "11": pimg="images/years.jpg"; pwt="98%"; break;
 										case "14": pimg="images/MywebQR.png"; pwt="323px"; break;  }
 							i = "22"; $('#pic2').hide(); $('#pic0').attr({"src":pimg,"onclick":"","title":""}).css({'width':pwt,"cursor":""}).show(); break;
 			case "a43":		sw = 1; j=(i=="43")?"0":j; fun2("v"+i,j); break;
