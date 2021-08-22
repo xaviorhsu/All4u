@@ -5,7 +5,7 @@ var navi = ["tastyfood;認識咱們;【 共生小聚 】;【 緣起簡介 】;�
 var str = "";
 for (var item=0;item<navi.length;item++) {
     var ss=navi[item].split(";"); 					//alert(ss);
-	var tmphref=( ss[0]=="togoold" )? http_ip+"index.html?sw=M":"#"+ss[0];  tmponclick= "$('#ifm,#pic').attr('src','');$('#wframe').hide();$('#mainbdy').show();" 
+	var tmphref=( ss[0]=="togoold" )? http_ip+"index.html?sw=M":"#"+ss[0];  tmponclick= "$('#ifm,#pic').attr('src','');$('#wframe').hide();$('#mainbdy').show();clearInterval(tn);" 
 	str += '<li class="nav-item mx-0"><a class="nav-link py-1 px-1 rounded js-scroll-trigger" onclick="'+tmponclick+'" href="'+tmphref+'" >'+ss[1]+'</a></li>';
 	}
 $("#navbarResponsive ul").html(str);

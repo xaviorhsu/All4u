@@ -51,13 +51,13 @@
 	  <div class="row">
         <div class="col-md-12 col-lg-12 mx-auto">
 		<span class="text-secondary sp0" style="font-family: 'Noto Sans TC', serif; font-size: 16px; font-weight:bold;">&nbsp;</span>
-		<input type="button" value="Ｘ" onclick="$('#ifm,#pic').attr('src','');$('#wframe').hide();$('#mainbdy').show();" style="float:right;margin:0 5px 5px 0;color:darkred;font-size:2.5vmin;font-weight:bold;" />&nbsp;
+		<input type="button" value="Ｘ" onclick="$('#ifm,#pic').attr('src','');$('#wframe').hide();$('#mainbdy').show();clearInterval(tn);" style="float:right;margin:0 5px 5px 0;color:darkred;font-size:2.5vmin;font-weight:bold;" />&nbsp;
 		  <div align="center" class="portfolio-item mx-auto" data-toggle="modal" data-target="" style="background-color:black;border-radius:5px;border:4px double red;box-shadow:5px 10px 5px gray;">
           <img id="pic" class="img-fluid" src="" style="display:none;border:4px solid lightgreen;width:99%;height:350px;" alt="" title="" />
 		  <iframe id="ifm" align="center" frameborder="0" src="" style="display:none;border:4px solid #0FF;width:99%;height:350px;background-color:black;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" scrolling="no" allowfullscreen></iframe>
 		  </div>
         </div>
-		<div class="mx-auto"><input type="button" value="關閉視窗" onclick="$('#ifm,#pic').attr('src','');$('#wframe').hide();$('#mainbdy').show();" style="margin-top:10px;color:darkred;font-size:3vmin;font-weight:bold;" /></div>            
+		<div class="mx-auto"><input type="button" value="關閉視窗" onclick="$('#ifm,#pic').attr('src','');$('#wframe').hide();$('#mainbdy').show();clearInterval(tn);" style="margin-top:10px;color:darkred;font-size:3vmin;font-weight:bold;" /></div>            
       </div>	  
     </div>	
   </section>  

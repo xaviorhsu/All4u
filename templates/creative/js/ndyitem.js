@@ -32,7 +32,7 @@ var arr  = [];
 				  }*/	
 // -----------------
 	for (var item=0;item<vfamnet0.length;item++)	{ var ss=vfamnet0[item].split(";");		
-		olk="$('#mainbdy,#ifm').hide();$('#wframe,#pic').show();funB('"+ss[0]+"','"+ss[1]+"',"+ss[2]+",'"+ss[3]+"');";	//alert(ss+"<=>"+olk);
+		olk="$('#mainbdy,#ifm').hide();$('#wframe,#pic').show();clearInterval(tn);funB('"+ss[0]+"','"+ss[1]+"',"+ss[2]+",'"+ss[3]+"');";	//alert(ss+"<=>"+olk);
 		$("#family div.container div.row img.sp"+item).attr({"src":"./templates/creative/img/family/"+ss[1]+".jpg","onclick":olk,"title":ss[0]+"(點擊輪播)"}).css('cursor','pointer');
 	}	
 // -----------------
@@ -40,7 +40,7 @@ var arr  = [];
 		var ff=arr[0].split(";");
 		for (var item=ff[2].substr(2,1);item<arr.length;item++)	{ var ss=arr[item].split(";");		 //alert(ss);			
 		s1="https://www.youtube.com/embed/"+ss[3]+"?autoplay=1&version=3&html5=1"; subdir=(ss[0]=="historic")?"historical site":ss[0];
-		olk='$("#mainbdy,#pic").hide();$("#wframe,#ifm").show();$("#wframe div.container div.row span.sp0").html("【'+ss[1]+'】");$("#ifm").attr("src","'+s1+'");';		//alert(s1+"<=>"+olk);
+		olk='$("#mainbdy,#pic").hide();$("#wframe,#ifm").show();clearInterval(tn);$("#wframe div.container div.row span.sp0").html("【'+ss[1]+'】");$("#ifm").attr("src","'+s1+'");';		//alert(s1+"<=>"+olk);
 		$("#"+ss[0]+" div.container div.row img.sp"+ss[2].substr(2,1)).attr({"src":"./templates/creative/img/"+subdir+"/"+ss[2]+".jpg","onclick":olk,"title":ss[1]+"(點擊看影片)"}).css('cursor','pointer');
 		}
 	}	
@@ -54,7 +54,7 @@ var arr  = [];
 	Fa=A; Fno=Fn; Adr=Ad; var sw=0; clearInterval(tn); 
 	sw=(Fno==1)?0:1; s1="./templates/creative/img/family/"+Fa+".jpg"; e1=(Adr)?"(點擊『外聯』)":"(游標置此暫停輪播)";
 	o1=(Adr)?"window.open('"+Adr+"','MFrame',);":""; p1=(Adr)?"pointer":"";	
-	$("#pic").attr({"src":s1,"onclick":o1,"title":e1}).css('cursor',p1).show();
+	$("#pic").attr({"src":s1,"onclick":o1,"title":e1}).css('cursor',p1);
 	curpno=(curpno>Fno-1)?Fno-1:curpno;
 	if(sw) 	{  t=setInterval( mytime,4000); tn=t; }	
     }
