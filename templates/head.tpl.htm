@@ -1,0 +1,104 @@
+ <!-- Navigation -->
+ <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+
+      <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a> -->
+
+      <!-- logo大小與顏色 class="img-fluid" 
+      <span class="logoColor"><i class="fas fa-house-user"></i></span>-->
+      <img src="./templates/creative/img/header/AQUA ICONS SYSTEM HOUSE.png" style="width:50px;border:1px white solid;box-shadow:5px 5px 5px #0FF;" alt="">
+      <!-- logo字體大小與顏色 -->
+      <span Class="logoSize"><a class="navbar-brand rounded js-scroll-trigger" href="index.html#page-top" >【臺南主教座堂】</a></span>
+      
+      <button style="font-family: 'Noto Sans TC', serif; font-size: 20px;font-weight: 180;" class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        類別<i class="fas fa-bars"></i></button>
+
+      <!-- 導覽列通字體大小與顏色 -->
+      <div class="collapse navbar-collapse" id="navbarResponsive" >
+        <ul class="navbar-nav ml-auto"><script src="templates/creative/js/navitem.js"></script>          
+          <!--<<li class="nav-item"><a class="nav-link rounded js-scroll-trigger" href="#portfolio" >招租資訊</a></li>
+          <li class="nav-item"><a class="nav-link rounded js-scroll-trigger" href="#tastyfood" >雅房物件</a></li>
+          <li class="nav-item"><a class="nav-link rounded js-scroll-trigger" href="#historic" >圖影覽視</a></li>
+          <li class="nav-item"><a class="nav-link rounded js-scroll-trigger" href="#family" >位置街景</a></li>
+          <li class="nav-item"><a class="nav-link rounded js-scroll-trigger" href="#about" >相關須知</a></li>		  
+		      <li class="nav-item"><a class="nav-link rounded js-scroll-trigger" href="#contact" >附　錄</a></li>
+          {foreach $mainMenus as $mainMenu}>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="<{$mainMenu.url}>" <{if $mainMenu.target == 1}>target="_blank" <{/if}>><{$mainMenu.title}></a>
+            </li>
+          <{/foreach}> 
+		      <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">首頁</a></li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#tastyfood">美食</a></li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#historic">古蹟</a></li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#family">親子</a></li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#literature">文藝</a></li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">關於我們</a></li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">聯絡我們</a></li>
+          
+          <{if $smarty.session.user.kind === 1}> 
+          <{* 管理員 *}>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="user.php">後台</a></li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.php?op=logout">登出</a></li>
+          <{* 會員 *}>  
+          <{elseif $smarty.session.user.kind === 0}>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.php?op=logout">登出</a></li>
+          <{* 未登入 *}>
+          <{else}>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.php?op=login_form">登入</a></li>
+          <{/if}> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Masthead -->
+  <header>
+    <!-- 以下是一個 slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <!-- 以下是 slider 下方的指示器 -->
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+      <!-- 以下是 slider 中的影像圖片區 -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- 下方 div 是標題說明區 -->
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h3>The Quest of Watchmakers</h3>
+            <p>Constant Escapement L.M.</p>
+            <p>Constancy (in the sense of constant force) is a permanent quest for watchmakers. At Girard-Perregaux, this horological ‘holy grail’ has become a reality. Presented in 2008, the Constant Escapement revolutionised the very foundations of chronometry.</p>
+            <p>Ten years after this major breakthrough that won the prestigious “Aiguille d’Or” award in the Grand Prix d’Horlogerie de Genève, Girard-Perregaux introduces a new Constant Escapement L.M. model featuring a design that is more technical and contemporary than ever.</p>
+          </div> -->
+        </div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+      </div>
+      <!-- 以下是 slider 左右方向的控制區 -->
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>      
+    </div>
+  </header>

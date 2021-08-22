@@ -1,0 +1,65 @@
+<div id="logibdy">
+<!-- logier section --------------------------------------------->
+<style>
+    .form-signin {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        margin: 0 auto;
+    }      
+</style>
+<section id="tologin" class="page-section bg-primary mb-0" style="display:none;background-color:white !important;"> 
+	<div class="container">
+	 <!-- literature Section Heading -->
+       <h2 class="page-section-heading text-center text-uppercase text-primary mb-0" style="color:black !important;font-family: 'Noto Sans TC', serif; font-size: 36px; font-weight: 290px;">&nbsp;</h2>
+      
+	  <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+      </div>
+	  
+		<form class="form-signin" action="index.php" method="post">
+			<div class="mb-2">
+				<label for="name" class="sr-only">帳號</label>
+				<input type="text" name="uname" id="uname" class="form-control" placeholder="請輸入帳號"  required>
+			</div>
+			<div class="mb-2">
+				<label for="pass" class="sr-only">密碼</label>
+				<input type="password" name="pass" id="pass" class="form-control" placeholder="請輸入密碼" required>
+			</div>    
+			<div class="checkbox mb-2">
+				<label>
+				<input type="checkbox" name="remember" id="remember"> 記住我
+				</label>
+			</div>
+			<input type="hidden" name="op" id="op" value="login">
+			<button class="btn btn-lg btn-primary btn-block" type="submit">送出</button>
+			<div>
+				您還沒還沒註冊嗎？請 <a href="index.php?op=reg_form">點選此處註冊您的新帳號</a>。
+			</div>        
+		</form>
+		
+	</div>
+</section>
+
+<!-- wframe Section ---------------------------------------------->
+  <section id="wframe" class="page-section py-4 mb-0 wframe" style="display:none;background-color:#99FF66;">
+    <div class="container">
+      <!-- wframe Section Form -->
+	  <div class="row">
+        <div class="col-md-12 col-lg-12 mx-auto">
+		<span class="text-secondary sp0" style="font-family: 'Noto Sans TC', serif; font-size: 16px; font-weight:bold;">&nbsp;</span>
+		<input type="button" value="Ｘ" onclick="$('#ifm,#pic').attr('src','');$('#wframe').hide();$('#mainbdy').show();" style="float:right;margin:0 5px 5px 0;color:darkred;font-size:2.5vmin;font-weight:bold;" />&nbsp;
+		  <div align="center" class="portfolio-item mx-auto" data-toggle="modal" data-target="" style="background-color:black;border-radius:5px;border:4px double red;box-shadow:5px 10px 5px gray;">
+          <img id="pic" class="img-fluid" src="" style="display:none;border:4px solid lightgreen;width:99%;height:350px;" alt="" title="" />
+		  <iframe id="ifm" align="center" frameborder="0" src="" style="display:none;border:4px solid #0FF;width:99%;height:350px;background-color:black;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" scrolling="no" allowfullscreen></iframe>
+		  </div>
+        </div>
+		<div class="mx-auto"><input type="button" value="關閉視窗" onclick="$('#ifm,#pic').attr('src','');$('#wframe').hide();$('#mainbdy').show();" style="margin-top:10px;color:darkred;font-size:3vmin;font-weight:bold;" /></div>            
+      </div>	  
+    </div>	
+  </section>  
+<hr class="wframe" style="display:none;background-color:white;">
+</div>

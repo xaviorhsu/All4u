@@ -1,20 +1,21 @@
 //----------------------------------------------------------------------------------------------- 
-  var HTTP_IP=(location.hostname=="websrv.local.tw")?"http://"+location.hostname+"/All4u/" : "https://tncath.catholic.org.tw/All4u/";
+  var HTTP_IP=(location.hostname=="websrv.local.tw")?"http://"+location.hostname+"/All4u/" : "https://xaviorhsu.github.io/All4u/";
   var opt, t, url;
 //---------０８０家服社-VqH0ez9LizI---------東照山心樂園-wxlQyjYwZic--------------------------
 // array LX=["name;Pic;addr;forms"] ==> type=w(web),f(facebook),v(vidio)
+  var Lz =[";Lz;;"];
   var L0 =["０８０家服社;L0;https://www.facebook.com/TOP5688;rtKg1XiTILM"];
   var L1 =["圓方居民宿;L1;https://www.booking.com/hotel/tw/yuan-fang-ju-min-su-jing-guan-can-ting.zh-tw.html;0R3Rs_SJPX0"];
   var L2 =["好假期民宿;L2;http://bestday.hi-bnb.com/;Tw9uMxKlnXU"];
-  var L3 =[";L3;;"];	//var L3 =["適合院民宿;L3;http://www.fanlu.com.tw/;"];
-  var L4 =["太平古厝民宿;L4;https://www.facebook.com/chienhui59/;czJffPoycHc"];
+  var L3 =["適合院民宿;L3;http://www.fanlu.com.tw/;"];
+  var L4 =[";Lz;;"];//var L4 =["太平古厝民宿;L4;https://www.facebook.com/chienhui59/;czJffPoycHc"];
   var L5 =["樂客背包棧;L5;https://localbackpacker.business.site/;"];
   var L6 =["川雅居民宿;L6;https://www.facebook.com/ChuanYaJuBnB/;xz7SZayccVM"];
   var L7 =["東照山心樂園;L7;https://www.facebook.com/Dongzhaoshan.Heartland.Homes/;glarUF8vG38"];
   var L8 =["曼陀藝術村;L8;https://www.facebook.com/TheAquarianConspiracy.TW/;https%3A%2F%2Fwww.facebook.com%2FTheAquarianConspiracy.TW%2Fvideos%2F946607475547488%2F"];
-  var L9 =[";L9;;"];	//var L9 =["拾穗山莊民宿;L9;https://www.facebook.com/gleaningmanor/;https%3A%2F%2Fwww.facebook.com%2Fgleaningmanor%2Fvideos%2F385901495660530%2F"];
-  var L10 =[";L10;;"];	//var L10=["情藝廊民宿;L10;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585;"];
-  var L11 =["瑞穗溫泉山莊;L11;http://www.js-hotspring.com.tw/;mxWXf0OMrJM"];
+  var L9 =[";Lz;;"];//var L9 =["拾穗山莊民宿;L9;https://www.facebook.com/gleaningmanor/;https%3A%2F%2Fwww.facebook.com%2Fgleaningmanor%2Fvideos%2F385901495660530%2F"];
+  var L10=["情藝廊民宿;L10;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585;"];
+  var L11 =[";Lz;;"];//var L11 =["瑞穗溫泉山莊;L11;http://www.js-hotspring.com.tw/;mxWXf0OMrJM"];
   var L12=["荷風自然宿;L12;http://a0982277513.yilan-travel.com.tw/;adj6an1rAxQ"];  
 //-----------------------------------------------------------------------------------------------
 /*  var L1=["p03;;;"]; var L2=["p61;f;https://www.facebook.com/TOP5688;"]; var L3=["p41;w;https://www.dfholidays.com/;"];
@@ -37,15 +38,23 @@
 //array v440/v450/v470=["Img;addr/video/pic;name;forms"] ==> addr=web/facebook/blog,v(video),pic(pics no);google's forms  
 //var v440 = ["v41;NjYWBo0otHM;創意漂流木<br>雕塑班<br>【郭素亦】;","v42;9tInTTSKR0w;峇里島Made<br>創意木雕班<br>【Ｏ Ｏ】;","v43;BxoThpNPpMc;創意木工車床<br>初級班<br>【范宸瑋】;","v44;gC20UHvcUvI;創意二胡手工<br>製作班<br>【楊正棟】;","v45;l8QU-aVw7Og;創意石雕<br>刻字班<br>【劉東偉】;","v46;5woU_Ur1fVw;創意木頭研磨<br>成型班<br>【郭宗松】;","v47;AJS24Cb5i7w;創意烙畫<br>初級班<br>【張格逢】;","v48;l8QU-aVw7Og;無限創意<br>木雕班<br>【沈正庚】;"];
   var v440 = ["v41;cJXXeutVWus;大樹遊畫<br>戶外寫生;","v42;y32EUUNwxS0;馬爹Made<br>印尼木雕;"];
-  var v450 = ["p510;1;希伯崙商訊<br>【有關表單】;https://docs.google.com/forms/d/1i5StDRSlduAziJKCSa60ZJqILx46ccX4w7m3vID6HhU/viewform?edit_requested=true","p520;3;香草潔護牙粉<br>【相關資料】;https://www.air-beautyspa.com/denta-care-toothpowder","p530;2;身心潔康皂<br>【相關資料】;","p540;2;回家友善種田<br>【相關資料】;"];
+  var v450 = ["p510;1;希伯崙商訊<br>【有關表單】;https://docs.google.com/forms/d/1i5StDRSlduAziJKCSa60ZJqILx46ccX4w7m3vID6HhU/viewform?edit_requested=true","p520;3;香草潔護牙粉<br>【相關資料】;https://www.air-beautyspa.com/denta-care-toothpowder","p530;2;身心潔康皂<br>【相關資料】;","p540;2;回家友善種田<br>【相關資料】;","p550;3;金檜傳說禮盒<br>【相關資料】;","p560;3;波瑟沙植善農場<br>【相關資料】;https://www.facebook.com/poseshafarm"];
   var v470 = ["v71;KMwj0KsAAOo;免費商店<br>共食廚房;","v72;gmFMwsB2Fzw;五甲社區<br>無價市集;","v73;WZuAOMZU5Qo;饅頭夫妻<br>環島捐愛;","v74;MV7kfEBjjvg;若竹兒<br>愛心商店;"];
-// ----- //  
-  var v460 = ["圓方居民宿<br>【嘉義】;p01;https://www.booking.com/hotel/tw/yuan-fang-ju-min-su-jing-guan-can-ting.zh-tw.html","好假期民宿<br>【嘉義】;p02;http://bestday.hi-bnb.com/","適合院民宿<br>【嘉義】;p03;http://www.fanlu.com.tw/","太平古厝民宿<br>【嘉義】;p04;https://www.facebook.com/1837344403209343/posts/2442651886011922/","樂客背包旅棧<br>【台南】;p05;https://localbackpacker.business.site/","川雅居民宿<br>【高雄】;p06;https://www.facebook.com/ChuanYaJuBnB/"];
-  var v461 = ["東照山心樂園<br>【高雄】;p07;https://www.facebook.com/Dongzhaoshan.Heartland.Homes/","曼陀藝術村<br>【高雄】;f08;https://www.facebook.com/TheAquarianConspiracy.TW/","拾穗山莊民宿<br>【台東】;f09;https://www.facebook.com/gleaningmanor/","情藝廊民宿<br>【花蓮】;p10;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585","瑞穗溫泉山莊<br>【花蓮】;p11;http://www.js-hotspring.com.tw/","荷風自然民宿<br>【宜蘭】;p12;http://a0982277513.yilan-travel.com.tw/"];
+// ----- //
+  var v46x = "<br>【】;pz0;";
+  var v460 = ["圓方居民宿<br>【嘉義】;p01;https://www.booking.com/hotel/tw/yuan-fang-ju-min-su-jing-guan-can-ting.zh-tw.html","好假期民宿<br>【嘉義】;p02;http://bestday.hi-bnb.com/","適合院民宿<br>【嘉義】;p03;http://www.fanlu.com.tw/","<br>【】;pz0;","樂客背包旅棧<br>【台南】;p05;https://localbackpacker.business.site/","川雅居民宿<br>【高雄】;p06;https://www.facebook.com/ChuanYaJuBnB/"];
+  var v461 = ["東照山心樂園<br>【高雄】;p07;https://www.facebook.com/Dongzhaoshan.Heartland.Homes/","曼陀藝術村<br>【高雄】;f08;https://www.facebook.com/TheAquarianConspiracy.TW/","<br>【】;pz0;","情藝廊民宿<br>【花蓮】;p10;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585","<br>【】;pz0;","荷風自然民宿<br>【宜蘭】;p12;http://a0982277513.yilan-travel.com.tw/"];
   var arr  = [];
   var audo;  var current_muc=Math.floor(Math.random()*2);
   $("#ado").attr("src","musics/mux"+current_muc+".mp3").prop("volume","0.8");
 //$('#mpage').resizable();
+//---------------------------------------------------------------------------------------- 
+//alert(window.screen.width+"<==>"+window.screen.availWidth+"<==>"+window.outerWidth+"<==>"+window.innerWidth+"<==>"+document.documentElement.scrollWidth);
+	/*let isMobile = window.matchMedia("only screen and (max-width:550px)").matches;
+		if(isMobile) {}	else {}  */
+	let dev_wid = window.outerWidth; let paVal=(getUrlVars("sw")=="M")?0:1;
+		if (dev_wid <= "550" && paVal) window.open(HTTP_IP+'default.html','_top',''); 
+		else {};
 //-----------------------------------------------------------------------------------------------     
   $(document).ready(function()  {
       var current_hgp=Math.floor(Math.random()*4);   $('#apDiv1').css('background-image','url(images/hfboth/hg'+current_hgp+'.jpg)');
@@ -164,12 +173,12 @@ var yt1="https://www.youtube.com/embed/";	var yt2="?autoplay=1&version=3&html5=1
      else if (subi=="if1")  { $("#if1").attr("src",P); if ($(F).attr("class")!="Fta") { if(audo.played) audo.pause(); } }
      else if (subi.substr(0,2)=="ft") {}
    //if (subi=="iw1")  { $("#im1").show(); window.open(P,"MFrame",);} else { $("#"+subi).show(); }
-	 if (subi=="iw1")  { $("#tb2").show(); window.open(P,"MFrame",);} else { $("#"+subi).show(); }
+	 if (subi=="iw1" && P!="")  { $("#tb2").show(); window.open(P,"MFrame",);} else { $("#"+subi).show(); }
     }
 // ----- //
-	var pic0=new Array();var net0=new Array();
-  function fun_pic() {	for (var i=0;i<=12;i++)	{ var pp=this["L"+i][0].split(";"); //alert(pp[0]+"<>"+pp[1]+"<>"+pp[2]+"<>"+pp[3]);
-	  pic0[i]="images/loops/"+pp[1]+".jpg"; net0[i]=pp[2];
+	var pic0=new Array();var net0=new Array(); var j=0;
+  function fun_pic() {	for (var i=0;i<=12;i++)	{ var pp=this["L"+i][0].split(";"); //alert(pic0.length+"=>"+pp[0]+"<>"+pp[1]+"<>"+pp[2]+"<>"+pp[3]);
+	  if(pp[1] != "Lz") { pic0[j]="images/loops/"+pp[1]+".jpg"; net0[j]=pp[2]; j++; } 
 	   } }
 // ----- //  
 	var curpno=0; var Fnu,Fa,Fno,s1,o1,e1,w1; var tn="";
@@ -210,6 +219,26 @@ function show_today(){
     result_today[7]=(today.getSeconds()<10)?('0'+today.getSeconds()):today.getSeconds();    //秒
     return result_today;
   }
+// ----------------------------------------------------------------------------------- //
+//            Read URL GET variables
+/*function getUrlVars()
+{
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+                function(m,key,value) { vars[key]=value;  });
+    return vars;
+}*/
+function getUrlVars(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+// ----------------------------------------------------------------------------------- //
 //-----------------------------------------------------------------------------------------------
    function show_succ(id){
     xmlHttp.onreadystatechange = function (){  	                //readyState有：0準備(unsent),1讀取中(opened),2已讀取(headers received),3交換中(loading),4已完成(done)等狀態

@@ -1,0 +1,39 @@
+/* ------------------------------------------------------------------------------ */
+	html, body { height: 90%; }
+    header { height: 90%; position: relative; background-color: #000; }
+
+      .carousel { height: 100%; }
+      .carousel-inner, .carousel-item { height: 100%; }
+      .carousel-item { background-size: cover; background-position: center; }
+      .carousel-item:nth-of-type(1) { background-image:url(../img/navimage/0.jpg); }
+      .carousel-item:nth-of-type(2) { background-image:url(../img/navimage/1.jpg); }
+      .carousel-item:nth-of-type(3) { background-image:url(../img/navimage/2.jpg); }
+      .carousel-item:nth-of-type(4) { background-image:url(../img/navimage/3.jpg); }
+      .carousel-item:nth-of-type(5) { background-image:url(../img/navimage/4.jpg); }
+      .carousel-item:nth-of-type(6) { background-image:url(../img/navimage/5.jpg); }
+
+      .carousel-caption { left: 15%; right: 60%; bottom: auto; top: 15%; display: none; }
+      .carousel-caption p { font-size: 13px; }
+      @media screen and (min-width: 768px){ .carousel-caption { display: block; }    }
+	  
+      .logoColor{
+        font-size: 36px; 
+        color:white; 
+        margin-right: 10px;
+      }
+
+      .logoSize{
+        font-family: 'Noto Sans TC','Microsoft JhengHei', serif; 
+        font-size: 19px; 
+        font-weight: 280;
+      }
+
+      #navbarResponsive,.control-group,.form-group{
+        font-family: 'Noto Sans TC', serif; 
+        font-size: 20px;
+        font-weight: 180;
+      }
+
+      #mainNav a:hover,#contact a span:hover,#carouselExampleIndicators a span:hover
+        {background-color:#0FF;color:darkred !important;border:solid 1px purple;box-shadow:3px 3px 5px #CF0;}
+/* ---------------------------------end--------------------------------------------- */		
