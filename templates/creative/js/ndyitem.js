@@ -3,16 +3,16 @@
 		$("#"+ss[0]+" div.container h2").html("《 "+ss[1]+" 》");
 		if( ss[0]!="togoold" ) { for( var i=2; i<=ss.length-2; i++) { $("#"+ss[0]+" div.container div.row span.sp"+(i-2)).html(ss[i]); }	}
 	}
-var vfamnet0 = ["希伯崙商訊;f10;1;https://docs.google.com/forms/d/1i5StDRSlduAziJKCSa60ZJqILx46ccX4w7m3vID6HhU/viewform?edit_requested=true","香草潔護牙粉;f20;3;https://www.air-beautyspa.com/denta-care-toothpowder","身心潔康皂;f30;2;","回家友善種田;f40;2;","金檜傳說禮盒;f50;3;","波瑟沙植善農場;f60;3;https://www.facebook.com/poseshafarm"];
+var vfamnet0 = ["希伯崙商訊;f10;1;https://docs.google.com/forms/d/1i5StDRSlduAziJKCSa60ZJqILx46ccX4w7m3vID6HhU/viewform?edit_requested=true","香草潔護牙粉;f20;3;https://www.air-beautyspa.com/denta-care-toothpowder","身心潔康皂;f30;2;","回家友善種田;f40;2;","金檜傳說禮盒;f50;3;","波瑟沙自皂香遇;f60;5;https://www.facebook.com/poseshafarm"];
 
 var vabtnet0 = ["圓方居民宿;1;https://www.booking.com/hotel/tw/yuan-fang-ju-min-su-jing-guan-can-ting.zh-tw.html","好假期民宿;2;http://bestday.hi-bnb.com/","適合院民宿;3;http://www.fanlu.com.tw/","樂客背包旅棧;4;https://localbackpacker.business.site/","川雅居民宿;5;https://www.facebook.com/ChuanYaJuBnB/"];
 var vabtnet1 = ["東照山心樂園;6;https://www.facebook.com/Dongzhaoshan.Heartland.Homes/","曼陀藝術村;7;https://www.facebook.com/TheAquarianConspiracy.TW/","情藝廊民宿;8;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585","荷風自然民宿;9;https://a0982277513.yilan-travel.com.tw/"];
 
 var vatsvdo0 = ["tastyfood;０８０家服社;v00;rtKg1XiTILM"];
 var vatsvdo1 = ["historic;大樹遊畫戶外寫生;v10;cJXXeutVWus","historic;馬爹Made印尼木雕;v11;y32EUUNwxS0"];
-var vatsvdo2 = ["contact;免費商店共食廚房;v30;KMwj0KsAAOo","contact;五甲社區無價市集;v31;gmFMwsB2Fzw","contact;饅頭夫妻環島捐愛;v32;WZuAOMZU5Qo","contact;若竹兒愛心商店;v33;MV7kfEBjjvg"];
+var vatsvdo2 = ["contact;免費商店共食廚房;v30;KMwj0KsAAOo","contact;五甲社區無價市集;v31;gmFMwsB2Fzw","contact;饅頭夫妻環島捐愛;v32;WZuAOMZU5Qo","contact;若竹兒愛心商店;v33;MV7kfEBjjvg","contact;群聚長青因緣際會;v34;"];
 
-var arr  = [];
+var arr  = []; var lstpage ="";
  $(document).ready(function()  {
 // -----------------
 	arr	= vabtnet0.concat(vabtnet1); 															
@@ -34,6 +34,7 @@ var arr  = [];
 	for (var item=0;item<vfamnet0.length;item++)	{ var ss=vfamnet0[item].split(";");		
 		olk="$('#mainbdy,#ifm').hide();$('#wframe,#pic').show();clearInterval(tn);funB('"+ss[0]+"','"+ss[1]+"',"+ss[2]+",'"+ss[3]+"');";	//alert(ss+"<=>"+olk);
 		$("#family div.container div.row img.sp"+item).attr({"src":"./templates/creative/img/family/"+ss[1]+".jpg","onclick":olk,"title":ss[0]+"(點擊輪播)"}).css('cursor','pointer');
+		if (item == (vfamnet0.length-1)) lstpage = olk;
 	}	
 // -----------------
 	for (var i=0;i<3;i++)	{ switch(i) {case 0: arr=vatsvdo0; break;case 1: arr=vatsvdo1; break;case 2: arr=vatsvdo2; break; }														
@@ -43,7 +44,9 @@ var arr  = [];
 		olk='$("#mainbdy,#pic").hide();$("#wframe,#ifm").show();clearInterval(tn);$("#wframe div.container div.row span.sp0").html("【'+ss[1]+'】");$("#ifm").attr("src","'+s1+'");';		//alert(s1+"<=>"+olk);
 		$("#"+ss[0]+" div.container div.row img.sp"+ss[2].substr(2,1)).attr({"src":"./templates/creative/img/"+subdir+"/"+ss[2]+".jpg","onclick":olk,"title":ss[1]+"(點擊看影片)"}).css('cursor','pointer');
 		}
-	}	
+	}
+// 波瑟沙香皂(自皂香遇)為首展示頁
+$('#mainbdy,#ifm').hide();$('#wframe,#pic').show();clearInterval(tn);funB('波瑟沙自皂香遇','f60',3,'https://www.facebook.com/poseshafarm');
 });
 // --------------------------------------------------------- // 
   $("#pic").hover( function(){ clearInterval(tn); } , function(){ t=setInterval( mytime,4000); tn=t; } );  //游標置此暫停輪播
