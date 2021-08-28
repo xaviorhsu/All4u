@@ -46,7 +46,7 @@ var arr  = []; var lstpage ="";
 		}
 	}
 // 波瑟沙香皂(自皂香遇)為首展示頁
-$('#mainbdy,#ifm').hide();$('#wframe,#pic').show();clearInterval(tn);funB('波瑟沙自皂香遇','f60',3,'https://www.facebook.com/poseshafarm');
+$('#mainbdy,#ifm').hide();$('#wframe,#pic').show();clearInterval(tn);funB('波瑟沙自皂香遇','f60',5,'https://www.facebook.com/poseshafarm');
 });
 // --------------------------------------------------------- // 
   $("#pic").hover( function(){ clearInterval(tn); } , function(){ t=setInterval( mytime,4000); tn=t; } );  //游標置此暫停輪播
