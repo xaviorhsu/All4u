@@ -3,7 +3,7 @@
 		$("#"+ss[0]+" div.container h2").html("《 "+ss[1]+" 》");
 		if( ss[0]!="togoold" ) { for( var i=2; i<=ss.length-2; i++) { $("#"+ss[0]+" div.container div.row span.sp"+(i-2)).html(ss[i]); }	}
 	}
-var vfamnet0 = ["希伯崙商訊;f10;1;https://docs.google.com/forms/d/1i5StDRSlduAziJKCSa60ZJqILx46ccX4w7m3vID6HhU/viewform?edit_requested=true","香草潔護牙粉;f20;3;https://www.air-beautyspa.com/denta-care-toothpowder","身心潔康皂;f30;2;","回家友善種田;f40;2;","金檜傳說禮盒;f50;3;","波瑟沙自皂香遇;f60;5;https://www.facebook.com/poseshafarm"];
+var vfamnet0 = ["希伯崙商訊;f10;1;https://docs.google.com/forms/d/e/1FAIpQLSemTh2GukiboQvYDWllQAPuY9nC_SLr0qN9QWdPnxMyjTuUmQ/viewform","香草潔護牙粉;f20;3;https://www.air-beautyspa.com/denta-care-toothpowder","身心潔康皂;f30;2;","回家友善種田;f40;2;","金檜傳說禮盒;f50;3;","波瑟沙自皂香遇;f60;5;https://www.facebook.com/poseshafarm"];
 
 var vabtnet0 = ["圓方居民宿;1;https://www.booking.com/hotel/tw/yuan-fang-ju-min-su-jing-guan-can-ting.zh-tw.html","好假期民宿;2;http://bestday.hi-bnb.com/","適合院民宿;3;http://www.fanlu.com.tw/","樂客背包旅棧;4;https://localbackpacker.business.site/","川雅居民宿;5;https://www.facebook.com/ChuanYaJuBnB/"];
 var vabtnet1 = ["東照山心樂園;6;https://www.facebook.com/Dongzhaoshan.Heartland.Homes/","曼陀藝術村;7;https://www.facebook.com/TheAquarianConspiracy.TW/","情藝廊民宿;8;https://www.facebook.com/permalink.php?story_fbid=2282920391993162&id=1615042895447585","荷風自然民宿;9;https://a0982277513.yilan-travel.com.tw/"];
